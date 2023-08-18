@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="404" dir="ltr" class="h-full dark">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
+<title>Error 404 | Uganda Bible Resources</title>
+<meta name="description" content="">
+
+<meta itemprop="name" content="Error 404">
+<meta itemprop="description" content="">
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Error 404">
+<meta property="og:description" content="">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Error 404">
+<meta name="twitter:description" content="">
+
+<meta name="generator" content="Astro v2.7.1">
+<meta name="theme-color" content="#d97706">
+  <link rel="stylesheet" href="/_astro/404.f357696d.css" />
+<link rel="stylesheet" href="/_astro/add.5bbb66c6.css" /><script type="module" src="/_astro/page.b7cc8384.js"></script></head>
+
+  <body class="antialiased text-stone-900 dark:text-stone-300 tracking-tight h-screen dark:bg-none dark:bg-black">
+    
+  <main>
+
+    <section class="flex items-center h-full p-16">
+      <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+        <div class="max-w-md text-center">
+          <h2 class="mb-8 font-bold text-9xl">
+            <span class="sr-only">Error</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500">404
+            </span>
+          </h2>
+          <p class="text-3xl font-semibold md:text-3xl">
+            Sorry, we couldn't find this page.
+          </p>
+          <p class="mt-4 mb-8 text-lg text-stone-600 dark:text-stone-400">
+            But dont worry, you can find plenty of other things on our homepage.
+          </p>
+          <a rel="noopener noreferrer" href="/" class="btn text-white bg-stone-900 hover:bg-stone-800 dark:bg-stone-700 dark:hover:bg-stone-800 ml-4">Back to homepage
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <script>
+  if (
+    localStorage.theme !== 'dark' || (!('theme' in localStorage) && !window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    document.documentElement.classList.remove('dark')
+  } else {
+    document.documentElement.classList.add('dark')
+  }
+
+  function attachEvent(selector, event, fn) {
+    const matches = document.querySelectorAll(selector)
+    if (matches && matches.length) {
+      matches.forEach((elem) => {
+        elem.addEventListener(
+          event,
+          function () {
+            fn(elem)
+          },
+          false
+        )
+      })
+    }
+  }
+
+  window.onload = function () {
+    attachEvent('[data-aw-toggle-menu]', 'click', function (elem) {
+      elem.classList.toggle('expanded')
+      document.getElementById('menu')?.classList.toggle('hidden')
+    })
+
+    attachEvent('[data-aw-toggle-color-scheme]', 'click', function (elem) {
+      document.documentElement.classList.toggle('dark')
+      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+    })
+  }
+  window.onpageshow = function () {
+    const elem = document.querySelector('[data-aw-toggle-menu]')
+    if (elem) {
+      elem.classList.remove('expanded')
+    }
+    document.getElementById('menu')?.classList.add('hidden')
+  }
+</script>
+  </body></html>

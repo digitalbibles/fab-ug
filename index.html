@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<script>(function(){const locales = {"sw":"Kiswahili","en":"English"};
+
+    const navLang = navigator.language || navigator.userLanguage;
+    const lang = (navLang != undefined) ? (navLang in locales) ? navLang.substring(0,2) : 'en' : 'en';
+    window.location.pathname = `/${lang}/`;
+})();</script>
